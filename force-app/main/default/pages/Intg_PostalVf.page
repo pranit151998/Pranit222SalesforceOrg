@@ -1,0 +1,9 @@
+<apex:page controller="Intg_PostalCode">
+    <apex:form id="re">
+    Enter pincode:<apex:inputText value="{!Pincode}"/>
+   
+    <apex:commandButton value="Submit" action="{!GetPostalDetails}" reRender="re"/>
+        <apex:dataList value="{!Place}" var="PI">{!PI}  </apex:dataList>
+      
+      </apex:form>
+</apex:page>

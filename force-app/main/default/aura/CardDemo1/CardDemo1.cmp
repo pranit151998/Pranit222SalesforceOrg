@@ -1,0 +1,3 @@
+<aura:component >
+	<c:CardDemo1></c:CardDemo1>
+</aura:component>

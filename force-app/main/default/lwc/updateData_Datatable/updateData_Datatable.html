@@ -1,0 +1,14 @@
+<template>
+        <lightning-card title="Data Table" icon-name="stanard:contact">
+        <template if:true={contact.data}>
+        <lightning-datatable
+        key-field="Id"
+        data={contact.data}
+        columns={col}
+        >
+        </lightning-datatable>
+        </template>
+        </lightning-card>
+        
+        
+</template>

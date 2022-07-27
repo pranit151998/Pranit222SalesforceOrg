@@ -1,0 +1,11 @@
+<apex:page standardController="Job_Application__c" tabStyle="Job_Application__c" recordSetVar="AllJobApplications">
+    <!-- Add below each field you reference in your Flow -->
+    <apex:repeat value="{!AllJobApplications}" var="row" rendered="false">
+        {!row.Name}
+    </apex:repeat>
+    <!-- Runs your Flow -->
+    <flow:interview name="SelectedJobApplications"
+          finishLocation="{!$CurrentPage.parameters.retURL}">
+        <apex:param name="SelectedRows" value="{!Selected}"/>
+    </flow:interview>    
+</apex:page>

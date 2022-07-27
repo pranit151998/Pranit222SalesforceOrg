@@ -1,0 +1,14 @@
+<template>
+<lightning-card>
+    <lightning-input type="number" variant="standard" name="aval" label="enter first number" onchange={callMe}></lightning-input>
+    <lightning-input type="number" variant="standard" name="bval" label="enter second number"  onchange={callMe}></lightning-input>
+    </br>
+    </br>
+    <lightning-button variant="brand" label="Add"  onclick={add}></lightning-button>&nbsp;
+    <lightning-button variant="brand" label="Sub"  onclick={sub}></lightning-button>&nbsp;
+    <lightning-button variant="brand" label="Multi"  onclick={mult}></lightning-button>&nbsp;
+<p></p>
+<p></p>
+Result:{resultValue}
+</lightning-card>
+</template>

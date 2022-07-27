@@ -1,0 +1,7 @@
+<apex:page standardController="Account" id="pg" sidebar="false" rendered="true">
+    <h1>
+        
+        demo page
+    </h1>
+    
+</apex:page>

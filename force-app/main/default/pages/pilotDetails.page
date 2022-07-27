@@ -1,0 +1,29 @@
+<apex:page standardController="Pilot_Details__c" recordSetVar="objpilotList" extensions="pilotCustomDataTable_CX">
+ <apex:form >
+ <apex:pageBlock title="Pilot Detail">
+ <apex:pageBlockSection title="Data Table">
+ <apex:commandButton value="Show Records"
+action="{!showRecord}"/> <br></br>
+ <apex:commandButton value="Update Records"
+action="{!updateRecord}"/> <br></br>
+ <apex:pageBlockTable value="{!objpilotList}"
+var="objpilot">
+
+ <apex:column headerValue="First Name">
+<apex:inputField value="{!objpilot.First_Name__c}"/>
+</apex:column>
+ <apex:column headerValue="Last Name">
+<apex:inputField value="{!objpilot.Last_Name__c}"/>
+</apex:column>
+ <apex:column headerValue="Gender"> <apex:inputField value="{!objpilot.Gender__c}"/> </apex:column>
+Akash Tekam
+ <apex:column headerValue="Mobile No.">
+<apex:inputField value="{!objpilot.Mobile_No__c}"/>
+</apex:column>
+ <apex:column value="{!objpilot.LastModifiedDate }"/>
+ </apex:pageBlockTable>
+ </apex:pageBlockSection>
+ </apex:pageBlock>
+ </apex:form>
+
+</apex:page>

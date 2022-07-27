@@ -1,0 +1,51 @@
+<template>
+   
+            
+        <div class="float-container">
+
+            <div class="float-child1">
+            
+                <div>
+
+                        <h2><b>Addition of 3 Numbers</b></h2>
+                        <lightning-input id="aval" type="text" label="Enter First Number" onchange={onNumberOneChange} value={number1}></lightning-input>
+                        <lightning-input id="bval" type="text" label="Enter Second Number" onchange={onNumberTwoChange} value={number2}></lightning-input>
+                        <lightning-input id="cval" type="text" label="Enter Third Number" onchange={onNumberThreeChange} value={number3}></lightning-input>
+                    </br>
+                    <lightning-button variant="brand" label="Calculate"  onclick={add}></lightning-button>&nbsp;  
+
+                </div>
+
+            </div>   
+    
+                <div class="float-child">
+
+                    <div>
+                        <h2><b>Addition of 2 Numbers</b></h2>
+                        <lightning-input  type="text" label="Enter First Number" onchange={onNumberOneChange1} value={numbera}></lightning-input>
+                        <lightning-input  type="text" label="Enter Second Number" onchange={onNumberTwoChange1} value={numberb}></lightning-input>
+                    </br>
+
+                </br>
+            </br>
+
+            <br>
+                    <lightning-button variant="brand" label="Calculate"  onclick={addTwoNumbers}></lightning-button>&nbsp;
+                    </div>
+
+                    
+                </div>   
+                
+            </div>
+            <div class="float-container">
+                <h1><b>Result:{resultValue}</b></h1>
+
+            </div>
+</br>
+
+
+         
+     
+      
+        
+</template>

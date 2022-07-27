@@ -1,0 +1,38 @@
+<apex:page >
+    <apex:form >
+    <apex:sectionHeader title="InputText"/>
+        <apex:pageBlock title="customer edit">
+            Name:<apex:inputText /> <br/><br/>
+            Age:<apex:inputText /> <br/><br/>
+            City:<apex:inputText />
+        </apex:pageBlock>
+        
+        <apex:sectionHeader title="InputText" subtitle="disabled" description="boolean value; text box will be deactivated if it is true"/>
+        <apex:pageBlock title="Customer edit">
+            Name:<apex:inputText disabled="true"/> <br/><br/>
+            Age:<apex:inputText />
+                 </apex:pageBlock>
+        
+    <apex:sectionHeader title="InputText" subtitle="maxlengh" description="Specifies how many characters are allowded"/>
+        <apex:pageBlock title="Customer edit">
+            Name:<apex:inputText maxlength="30" /> <br/><br/>
+            Age:<apex:inputText maxlength="3"/>
+         </apex:pageBlock>
+        
+        <apex:sectionHeader title="InputText" subtitle="maxlengh" description="Specifies the width of textbox"/>
+        <apex:pageBlock title="Customer edit">
+            Name:<apex:inputText maxlength="30" /> <br/><br/>
+            Age:<apex:inputText maxlength="3" size="5"/>
+         </apex:pageBlock>
+        
+        <apex:sectionHeader title="InputText" subtitle="Style" description="To add custom css style"/>
+        <apex:pageBlock title="Customer edit">
+            Name:<apex:inputText style="background:yellow" /> <br/><br/>
+            Age:<apex:inputText style="background:yellow"/>
+         </apex:pageBlock>
+  
+  
+  
+   </apex:form>
+    
+</apex:page>

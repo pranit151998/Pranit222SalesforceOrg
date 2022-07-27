@@ -1,0 +1,5 @@
+<apex:component >
+    <apex:attribute name="textValue" description="This is the value for the component" type="String" required="true"/>
+    <apex:attribute name="textColor" description="This is color for the border." type="String" required="true"/>
+    <apex:outputText value="{!textValue}" style="color:{!textColor};"/>
+</apex:component>

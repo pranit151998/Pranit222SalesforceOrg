@@ -1,0 +1,48 @@
+<template>
+    
+    <lightning-card title="Spinner Demo" >
+     
+        <lightning-button label="Spinner" variant="Brand" onclick={spinneroneHandler}></lightning-button>&nbsp;&nbsp;
+      
+    <template if:true={showone}>
+    
+  
+     
+     
+        
+        <c-lwc_loader variant="brand" size="small"   spinner-text="Please wait while loading"></c-lwc_loader>
+
+    </template>
+    
+
+
+    <lightning-button label="Spinner" variant="Brand"  onclick={spinnertwoHandler}></lightning-button>&nbsp;&nbsp;
+   
+    <template if:true={showtwo}>
+    
+            
+   
+        <c-lwc_loader variant="brand" size="medium"   spinner-text="Please wait while loading"></c-lwc_loader>
+    
+
+
+
+    </template>
+
+
+
+    <lightning-button label="Spinner" variant="Brand"  onclick={spinnerthreeHandler}></lightning-button>&nbsp;&nbsp;
+    
+    <template if:true={showthree}>
+    
+         
+        
+        
+        <c-lwc_loader variant="brand" size="large" spinner-text="Please wait while loading"></c-lwc_loader>
+
+    
+    </template>
+
+</lightning-card>
+
+</template>

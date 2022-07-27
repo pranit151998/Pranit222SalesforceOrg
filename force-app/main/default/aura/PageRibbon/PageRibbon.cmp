@@ -1,0 +1,40 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute type="Object[]" name="contractData"/>
+    <aura:attribute name="contractColumns" type="List"/>
+    <aura:attribute name="isNewContractModelOpen" type="boolean" default="false"/>
+    <aura:attribute name="iframeUrl" type="String"/>
+    <aura:attribute name="width" type="String" />
+    <aura:attribute name="height" type="String" />
+    <aura:attribute name="scrolling" type="String" />
+    <aura:attribute name="frameBorder" type="String" />
+    <aura:attribute name="style" type="String" />
+    <aura:attribute name="sandbox" type="String" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.fetchContractList}"/>
+    
+    <lightning:card class="slds-card slds-card_boundary " iconName="standard:contract" title="Contracts">
+        <aura:set attribute="actions">
+            <lightning:buttonGroup>
+            <lightning:button variant="neutral" label="Edit"/>
+            </lightning:buttonGroup>
+           
+            <lightning:buttonGroup>
+		<lightning:button variant="neutral" label="Copy Record" />
+		<lightning:button variant="neutral" label="Reset Expire Date" />
+		<lightning:button variant="neutral" label="Smart Links" />
+		<lightning:buttonMenu alternativeText="Compare Documents" class="slds-button_last">
+			<lightning:menuItem label="Menu Item One" value="item1" />
+			<lightning:menuItem label="Menu Item Two" value="item2" />
+			<lightning:menuItem label="Menu Item Three" value="item3" />
+		</lightning:buttonMenu>
+	</lightning:buttonGroup>
+        </aura:set>
+          <lightning:outputField fieldName="ActivatedDate" />
+        <lightning:datatable data="{!v.contractData}"
+                             columns="{!v.contractColumns}"
+                             keyField="id"
+                             hideCheckboxColumn="true"/>
+        
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,19 @@
+<apex:page standardController="User" recordSetVar="records" id="thePage" extensions="userDetails_CX">
+    <apex:form id="theForm">
+       <apex:pageblock >
+          <apex:pageBlockTable value="{!records}" var="record" id="thePageBlockTable">
+              <apex:column headerValue="Name">
+                  <apex:inputField value="{!record.Name}"/>
+              </apex:column>
+              <apex:column headerValue="Email">
+                  <apex:outputField value="{!record.Email}"/>                  
+              </apex:column>
+              <apex:column headerValue="Active">
+              <apex:outputField value="{!record.IsActive}"/>                                     
+              </apex:column>
+         </apex:pageBlockTable>
+            <Apex:commandButton value="save"/>
+       </apex:pageblock>
+    </apex:form>
+ 
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page >
+    <apex:form >
+    <apex:pageBlock title="Location both by default">
+        <apex:pageBlockButtons location="top" >
+        <apex:commandButton value="with pbb" />
+        
+        </apex:pageBlockButtons>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+    
+
+</apex:page>

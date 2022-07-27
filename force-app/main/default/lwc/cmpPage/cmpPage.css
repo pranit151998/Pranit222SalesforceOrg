@@ -1,0 +1,35 @@
+.float-container {
+    background-color: blue;
+    padding: 150px ;
+    
+}
+
+.float-child {
+    background-color: blue;
+    width: 50%;
+    background-color:yellow;
+    float: left;
+    padding: 10px;
+    border: 2px solid black;
+}  
+.float-child1 {
+    background-color: blue;
+    width: 50%;
+    background-color: pink;
+    float: left;
+    padding: 10px;
+    border: 2px solid black;
+}  
+
+h1{
+    background: blue;
+    text-align: center;
+    border-radius: 5px;
+    width: 1180px;
+    background-color: skyblue;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px ;
+    height: 60px;
+    border: 2px solid white;
+}

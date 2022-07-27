@@ -1,0 +1,8 @@
+<apex:component >
+    <apex:attribute name="textcolor" type="String" description="TODO: Describe me"/>
+    <apex:attribute name="textvalue" type="String" description="TODO: Describe me"/>
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Component: mycomponent
+  <!-- End Default Content REMOVE THIS -->
+</apex:component>
